@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/minha_cor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Senha"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/botao_fundo"
+        android:backgroundTint="@color/botao_fundo"
+        android:text="Login"
+        android:textColor="@color/minha_cor"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/cadastrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ainda_n_o_cadastrado_cadastre_se"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="338dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/doubt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/esqueceu_sua_senha"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="696dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="683dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
